@@ -1,0 +1,14 @@
+[user]
+  name = Jeral Pineda
+  email = jeral.cris@gmail.com
+[alias]
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  s = status
+  cm = commit -m
+  cob = checkout -b
+  br = branch --format='%(HEAD) %(color:blue)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  #subir una rama a un remositorio remoto github
+  done = !git push origin HEAD
+  pub = push -u origin HEAD
+[init]
+  defaultBranch = main
