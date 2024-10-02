@@ -45,7 +45,7 @@ return {
           -- dark = { bg = "#23272e" }, -- yellow
         }
       })
-      --  vim.cmd("colorscheme onedark_dark")
+       vim.cmd("colorscheme onedark_dark")
     end,
   },
   { 
@@ -61,7 +61,7 @@ return {
       vim.g.moonflyUnderlineMatchParen = true
       vim.g.moonflyVirtualTextColor = true
       -- vim.g.moonflyWinSeparator = 2
-      vim.cmd([[colorscheme moonfly]])
+      -- vim.cmd([[colorscheme moonfly]])
     end,
   }
 }
