@@ -28,6 +28,13 @@ return {
     require("luasnip.loaders.from_vscode").lazy_load()
     require("vim-react-snippets").lazy_load()
 
+    -- agregando icono de Supermaven
+    lspkind.init({
+      symbol_map = {
+         Supermaven = "",
+      },
+    })
+
     cmp.setup({
       window = {
         completion = {
@@ -82,6 +89,7 @@ return {
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
+        { name = "supermaven" },
       }),
 
       -- configure lspkind for vs-code like pictograms in completion menu
@@ -92,5 +100,8 @@ return {
         }),
       },
     })
+
+    -- Color del icono de Supermaven
+    vim.api.nvim_set_hl(0, "CmpItemKindSupermaven", {fg ="#d45fde"})
   end,
 }
