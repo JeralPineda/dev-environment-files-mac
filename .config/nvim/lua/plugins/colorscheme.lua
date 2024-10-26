@@ -42,10 +42,20 @@ return {
           transparency = true
         },
         colors = {
+          bg_float = "#1e1e2e", -- Color personalizado para ventanas flotantes
           -- dark = { bg = "#23272e" }, -- yellow
         }
       })
        vim.cmd("colorscheme onedark_dark")
+
+       -- Definir los colores de las ventanas de autocompletado (cmp) y LSP
+      -- vim.api.nvim_set_hl(0, "CmpPmenu", { bg = "#1e1e2e" }) -- Fondo para el menú de cmp
+      -- vim.api.nvim_set_hl(0, "CmpPmenuBorder", { bg = "#1e1e2e", fg = "#555555" }) -- Borde para cmp
+      -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e1e2e" }) -- Fondo para ventanas flotantes de LSP
+      -- vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#1e1e2e", fg = "#555555" }) -- Borde para ventanas flotantes de LSP
+      -- vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e2e" }) -- Fondo para el menú emergente
+      vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#171717" }) -- Fondo para el ítem seleccionado en el menú
+  
     end,
   },
   { 
