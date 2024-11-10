@@ -1,6 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v3.x",
+  enabled = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
@@ -24,8 +25,8 @@ return {
         },
       },
     })
-    vim.keymap.set("n", "<leader>ee", ":Neotree filesystem reveal left<CR>", {})
-    vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
-    vim.keymap.set("n", "<leader>ec", ":Neotree filesystem close <CR>", {})
+    vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", {desc = "Toggle file explorer" }) -- toggle file explorer
+    vim.keymap.set("n", "<leader>ef", ":Neotree filesystem reveal left<CR>", { desc = "Reveal file explorer" }) -- reveal file explorer
+    vim.keymap.set("n", "<leader>eb", ":Neotree buffers reveal float<CR>", { desc = "Reveal float file explorer buffers" }) -- reveal float file explorer buffers
   end,
 }
