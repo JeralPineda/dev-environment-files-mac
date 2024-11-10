@@ -23,14 +23,13 @@ return {
           show = { folder_arrow = false, git = true },
           glyphs = {
             git = {
-              unstaged = "✗",
+              unstaged = "~", -- "✗"
               staged = "✓",
               unmerged = "",
               renamed = "➜",
               untracked = "★",
               deleted = "",
               ignored = "◌",
-              -- modified = "M", -- Icono para archivos modificados
             },
             folder = {
               arrow_closed = "", -- arrow when folder is closed
@@ -68,5 +67,14 @@ return {
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
+
+
+    -- Define los colores de Git como en VS Code
+    vim.api.nvim_set_hl(0, "NvimTreeGitDirty", { fg = "#e5c07b" })   -- Modificado
+    vim.api.nvim_set_hl(0, "NvimTreeGitNew", { fg = "#98c379" })     -- Agregado
+    vim.api.nvim_set_hl(0, "NvimTreeGitDeleted", { fg = "#e06c75" }) -- Eliminado
+    vim.api.nvim_set_hl(0, "NvimTreeGitStaged", { fg = "#61afef" })  -- Preparado (staged)
+    vim.api.nvim_set_hl(0, "NvimTreeGitMerge", { fg = "#c678dd" })   -- Conflicto
+    vim.api.nvim_set_hl(0, "NvimTreeGitRenamed", { fg = "#56b6c2" }) -- Renombrado
   end
 }
