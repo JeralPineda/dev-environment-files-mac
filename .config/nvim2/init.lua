@@ -1,2 +1,2 @@
-require("jeral.core")
-require("jeral.lazy")
+require(".config.nvim2.lua.jeral.core.init")
+require(".config.nvim2.lua.jeral.lazy")

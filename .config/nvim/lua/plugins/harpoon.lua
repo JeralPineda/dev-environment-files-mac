@@ -14,14 +14,14 @@ return {
       {
         "<leader>H",
         function()
-          require("harpoon"):list():add()
+          require(".config.nvim2.lua.jeral.plugins.harpoon"):list():add()
         end,
         desc = "Harpoon File",
       },
       {
         "<leader>M",
         function()
-          local harpoon = require("harpoon")
+          local harpoon = require(".config.nvim2.lua.jeral.plugins.harpoon")
           harpoon.ui:toggle_quick_menu(harpoon:list())
         end,
         desc = "Harpoon Quick Menu",
@@ -32,7 +32,7 @@ return {
       table.insert(keys, {
         "<leader>" .. i,
         function()
-          require("harpoon"):list():select(i)
+          require(".config.nvim2.lua.jeral.plugins.harpoon"):list():select(i)
         end,
         desc = "Harpoon to File " .. i,
       })

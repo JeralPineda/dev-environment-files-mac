@@ -4,7 +4,7 @@ return {
     ft = "json",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function()
-      require("package-info").setup({
+      require(".config.nvim2.lua.jeral.plugins.package-info").setup({
         autostart = false,
         package_manager = "npm",
         colors = {

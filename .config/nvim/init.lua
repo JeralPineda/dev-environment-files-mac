@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("vim-keymaps")
-require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
+require(".config.nvim2.lua.jeral.lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
 
 	checker = {
 		enabled = true,

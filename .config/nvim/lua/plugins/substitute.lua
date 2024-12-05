@@ -2,7 +2,7 @@ return {
   "gbprod/substitute.nvim",
   event = { "BufReadPre", "BufNewFile" },
   config = function()
-    local substitute = require("substitute")
+    local substitute = require(".config.nvim2.lua.jeral.plugins.substitute")
 
     substitute.setup()
 

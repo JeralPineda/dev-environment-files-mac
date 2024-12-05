@@ -1,7 +1,7 @@
 return {
   "stevearc/oil.nvim",
   config = function()
-    local oil = require("oil")
+    local oil = require(".config.nvim2.lua.jeral.plugins.oil")
     oil.setup({
       float = {
         -- Padding around the floating window

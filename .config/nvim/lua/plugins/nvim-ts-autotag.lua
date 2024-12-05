@@ -1,7 +1,7 @@
 return {
   "nvim-ts-autotag",
   config = function()
-    require("nvim-ts-autotag").setup({
+    require(".config.nvim2.lua.jeral.plugins.nvim-ts-autotag").setup({
       opts = {
         -- Defaults
         enable_close = true,       -- Auto close tags

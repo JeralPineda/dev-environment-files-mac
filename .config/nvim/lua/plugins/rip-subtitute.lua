@@ -4,7 +4,7 @@ return {
 	keys = {
 		{
 			"<leader>st",
-			function() require("rip-substitute").sub() end,
+			function() require(".config.nvim2.lua.jeral.plugins.rip-substitute").sub() end,
 			mode = { "n", "x" },
 			desc = " rip substitute",
 		},

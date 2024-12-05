@@ -36,7 +36,7 @@ return {
   },
   config = function()
     -- import lspconfig plugin
-    local lspconfig = require("lspconfig")
+    local lspconfig = require(".config.nvim2.lua.jeral.plugins.lsp.lspconfig")
 
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")

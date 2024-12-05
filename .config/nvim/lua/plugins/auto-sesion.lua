@@ -1,7 +1,7 @@
 return {
 	"rmagatti/auto-session",
 	config = function()
-		local auto_session = require("auto-session")
+		local auto_session = require(".config.nvim2.lua.jeral.plugins.auto-session")
 
 		auto_session.setup({
 			auto_restore_enabled = false,

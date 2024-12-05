@@ -3,7 +3,7 @@ return {
   event = "BufReadPre",
   priority = 1200,
   config = function()
-    require("incline").setup({
+    require(".config.nvim2.lua.jeral.plugins.incline").setup({
       window = { margin = { vertical = 0, horizontal = 1 } },
       hide = {
         cursorline = true,

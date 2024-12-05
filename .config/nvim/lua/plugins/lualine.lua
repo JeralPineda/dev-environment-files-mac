@@ -34,7 +34,7 @@ return {
       },
     }
 
-    require('lualine').setup {
+    require('.config.nvim2.lua.jeral.plugins.lualine').setup {
       options = {
         icons_enabled = true,
         theme = bubbles_theme,

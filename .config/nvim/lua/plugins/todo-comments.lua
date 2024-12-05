@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
-    local todo_comments = require("todo-comments")
+    local todo_comments = require(".config.nvim2.lua.jeral.plugins.todo-comments")
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness

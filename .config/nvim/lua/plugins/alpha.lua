@@ -5,7 +5,7 @@ return {
 	},
 
 	 config = function()
-    local alpha = require("alpha")
+    local alpha = require(".config.nvim2.lua.jeral.plugins.alpha")
     local dashboard = require("alpha.themes.startify") --dashboard / startify
 
     -- Set header

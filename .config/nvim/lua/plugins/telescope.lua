@@ -13,10 +13,10 @@ return {
     },
     config = function()
       local actions = require("telescope.actions")
-      local telescope = require("telescope")
+      local telescope = require(".config.nvim2.lua.jeral.plugins.telescope")
       local transform_mod = require("telescope.actions.mt").transform_mod
 
-      local trouble = require("trouble")
+      local trouble = require(".config.nvim2.lua.jeral.plugins.trouble")
       local trouble_telescope = require("trouble.sources.telescope")
 
       -- or create your custom action
@@ -26,7 +26,7 @@ return {
         end,
       })
 
-      require("telescope").setup({
+      require(".config.nvim2.lua.jeral.plugins.telescope").setup({
         defaults = {
           path_display = { "smart" },
           mappings = {
@@ -84,7 +84,7 @@ return {
       vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", {})
       vim.keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<cr>", {})
 
-      require("telescope").load_extension("ui-select")
+      require(".config.nvim2.lua.jeral.plugins.telescope").load_extension("ui-select")
     end,
   },
 }
