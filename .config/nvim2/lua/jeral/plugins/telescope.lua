@@ -33,6 +33,25 @@ return {
             ["<C-t>"] = trouble_telescope.open,
           },
         },
+
+         -- Asegúrate de incluir archivos ocultos en búsquedas
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--hidden", -- Incluye archivos ocultos
+          "--no-ignore", -- Ignora .gitignore
+        },
+      },
+       pickers = {
+        find_files = {
+          hidden = true, -- Incluye archivos ocultos
+          no_ignore = true, -- Ignora las reglas de .gitignore
+        },
       },
     })
 
