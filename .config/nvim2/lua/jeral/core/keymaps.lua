@@ -39,3 +39,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- Minty color picker
 keymap.set("n", "<leader>os", "<cmd>:Shades<CR>", { desc = "Open shades color picker" })
 keymap.set("n", "<leader>oh", "<cmd>:Huefy<CR>", { desc = "Open huefy color picker" })
+
+-- Expandir snippet en modo insert
+vim.api.nvim_set_keymap('i', '<C-l>', '<cmd>lua require("luasnip").expand_or_jump()<CR>', { noremap = true, silent = true })
