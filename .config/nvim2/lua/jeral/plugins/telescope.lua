@@ -34,23 +34,23 @@ return {
           },
         },
 
-         -- Asegúrate de incluir archivos ocultos en búsquedas
-        vimgrep_arguments = {
-          "rg",
-          "--color=never",
-          "--no-heading",
-          "--with-filename",
-          "--line-number",
-          "--column",
-          "--smart-case",
-          "--hidden", -- Incluye archivos ocultos
-          "--no-ignore", -- Ignora .gitignore
-        },
+         -- Asegúrate de incluir archivos ocultos en búsquedas, esto hace lenta la búsqueda
+        -- vimgrep_arguments = {
+        --   "rg",
+        --   "--color=never",
+        --   "--no-heading",
+        --   "--with-filename",
+        --   "--line-number",
+        --   "--column",
+        --   "--smart-case",
+        --   "--hidden", -- Incluye archivos ocultos
+        --   "--no-ignore", -- Ignora .gitignore
+        -- },
       },
        pickers = {
         find_files = {
-          hidden = true, -- Incluye archivos ocultos
-          no_ignore = true, -- Ignora las reglas de .gitignore
+          -- hidden = true, -- Incluye archivos ocultos
+          -- no_ignore = true, -- Ignora las reglas de .gitignore
         },
       },
     })
